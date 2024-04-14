@@ -72,11 +72,17 @@ const Header = () => {
 
 
   const showCart = async() => {
+    let user = localStorage.getItem('user')
+    if(user){
 
-    dispatch({
-      type : actionType.SET_CART_SHOW,
-       cartShow: !cartShow,
-     });
+      dispatch({
+        type : actionType.SET_CART_SHOW,
+         cartShow: !cartShow,
+       });
+    }else{
+      login()
+    }
+
   }
 
   // useEffect(()=>{

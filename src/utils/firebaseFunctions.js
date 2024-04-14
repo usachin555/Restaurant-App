@@ -82,9 +82,8 @@ export const removeFromCart = async (data) => {
       collection(firestore, "cartItems"),
       orderBy("id", "desc"),
       where("id", "==", data.id),
-      // where('userId','==',user.uid)
-    )
-  );
+    ));
+
   let cart = items.docs.map((doc) => doc.data());
   if (cart.length > 0) {
     // console.log(items.docs[0].ref);
