@@ -81,7 +81,7 @@ useEffect(() => {
                 >{item?.title}</p>
                 <p className='-mt-1 text-sm text-gray-500'>{item?.calories}Calories</p>
                 <div className='flex items-centeer gap-8'>
-                    <p className='text-lg text-headingColor font-semibold'><span className='text-sm text-red-500'>$</span>{item?.price}</p>
+                    <p className='text-lg text-headingColor font-semibold'><span className='text-sm text-red-500'>₹ </span>{item?.price}</p>
                 </div>
             </div>
         

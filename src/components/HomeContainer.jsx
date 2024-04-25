@@ -60,7 +60,7 @@ import { heroData } from '../utils/data';
                   {n.decp}
               </p>
 
-              <p className='text-sm font-semibold text-headingColor'><span className='text-xs text-red-600'>$</span> {n.price}
+              <p className='text-sm font-semibold text-headingColor'><span className='text-xm text-red-600'>₹ </span> {n.price}
               </p>
           </div>
 
